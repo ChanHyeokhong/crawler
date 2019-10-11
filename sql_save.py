@@ -8,7 +8,7 @@ def save(sources,title,article_body,collect_time,link,good,nice,sad,angry,wanted
                            db='news',
                            charset='utf8')
     curs =conn.cursor()
-    sql = 'insert into news.news_check (출처,제목,본문,수집날짜,link,좋아요,훈훈해요,슬퍼요,화나요,원해요,추천해요,신문국)' \
+    sql = 'insert into news.news_check (출처,제목,본문,수집날짜,link,좋아요,훈훈해요,슬퍼요,화나요,원해요,추천해요,신문사)' \
           ' values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)'
 
     curs.execute(sql, (sources,title,article_body,collect_time,link,good,nice,sad,angry,wanted,recommand,press_1))

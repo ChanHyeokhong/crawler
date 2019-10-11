@@ -45,7 +45,6 @@ def collecting():
             ll.append(base_url+link)
 
     for i in ll:
-        print(i)
         cs=[]
         article_body, title = parse(i)
         press_1 = press(i)
