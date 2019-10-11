@@ -14,3 +14,4 @@ def save(sources,title,article_body,collect_time,link,good,nice,sad,angry,wanted
     curs.execute(sql, (sources,title,article_body,collect_time,link,good,nice,sad,angry,wanted,recommand,press_1))
     conn.commit()
     conn.close()
+#gb..
